@@ -1,0 +1,63 @@
+@import "resert";
+
+.wrapper {
+    min-height: 100vh;
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+}
+
+.fullscreen {
+    min-height: 100vh;
+    background-color: rgb(187, 180, 180);
+    display: flex;
+    padding: 20px 0;
+    &__body {
+        background-color: aliceblue;
+        max-width: 1000px;
+        flex: 1 1 auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+    &__title {
+        margin: 0 0 20px 0;
+        letter-spacing: 2px;
+    }
+    &__text:not(last:last-child) {
+        margin: 0 0 20px 0;
+    }
+    &__link {
+        display: inline-block;
+        line-height: 50px;
+        border: 2px solid gray;
+        border-radius: 7px;
+        align-self: center;
+        padding: 2px 5px;
+        cursor: pointer;
+        background-color: #909a9a;
+        color: white;
+    }
+    }
+
+.content {
+    background-color: lightsteelblue;
+    &__body {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
+.footer {
+    background-color: lightslategrey;
+    &__body{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+}
