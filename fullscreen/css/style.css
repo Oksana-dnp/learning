@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woof2") format("woff2");
+  font-weight: "400";
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woof2") format("woff2");
+  font-weight: "500";
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-SemiBold.woff") format("woff"), url("../fonts/Gilroy-SemiBold.woof2") format("woff2");
+  font-weight: "600";
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woof2") format("woff2");
+  font-weight: "700";
+  font-style: "normal";
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -8,7 +36,8 @@
 html, body {
   height: 100%;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Gilroy";
+  font-weight: 400;
 }
 
 a, a:visited {
@@ -30,7 +59,7 @@ a, a:visited {
 
 .fullscreen {
   min-height: 100vh;
-  background-color: #bbb4b4;
+  background-color: #f5d9ca;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +67,6 @@ a, a:visited {
 }
 
 .fullscreen__body {
-  background-color: aliceblue;
   max-width: 1000px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -56,6 +84,7 @@ a, a:visited {
           justify-content: center;
   text-align: center;
   padding: 0 20px;
+  line-height: 40px;
 }
 
 .fullscreen__title {
@@ -70,25 +99,44 @@ a, a:visited {
 .fullscreen__link {
   display: inline-block;
   line-height: 50px;
-  border: 2px solid gray;
-  border-radius: 7px;
+  border: 2px solid transparent;
+  border-radius: 15px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 2px 5px;
+  padding: 2px 10px;
   cursor: pointer;
-  background-color: #909a9a;
+  background-color: #f9efe9;
   color: white;
 }
 
+.fullscreen__bg {
+  background: url(../img/photo_bg.jpeg) center/cover no-repeat fixed;
+}
+
 .content {
-  background-color: lightsteelblue;
+  background-color: #f5e1f7;
+  padding: 20px 0;
 }
 
 .content__body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.content__main-title {
+  margin-bottom: 20px;
+}
+
+.content__title {
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.content__text {
+  padding-bottom: 15px;
+  text-align: justify;
 }
 
 .footer {
