@@ -9,6 +9,7 @@
 }
 
 @import "fonts";
+@import "icons";
 @import "resert";
 
 .wrapper {
@@ -80,11 +81,27 @@
 }
 
 .footer {
-    background-color: lightslategrey;
+    padding: 20px 0;
+    background-color: #d4d1d4;
     &__body{
         max-width: 1000px;
         margin: 0 auto;
         padding: 0 20px;
         text-align: center;
+    }
+    &__list-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__contacts-title {
+        text-align: left;
+        padding: 15px;
+        letter-spacing: 2px;
+        font-size: 30px;
+    }
+    &__contacts-item {
+        margin-bottom: 5px;
+        font-size: 23px;
     }
 }

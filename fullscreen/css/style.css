@@ -26,6 +26,78 @@
   font-style: "normal";
 }
 
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woof2") format("woff2");
+  font-weight: "400";
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]:before,
+[class*=" _icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="_icon-"]:before,
+[class*=" _icon-"]:before {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+._icon-arrow-down:before {
+  content: "\e900";
+}
+
+._icon-arrow-link:before {
+  content: "\e901";
+}
+
+._icon-cart:before {
+  content: "\e902";
+}
+
+._icon-favorite:before {
+  content: "\e903";
+}
+
+._icon-location:before {
+  content: "\e904";
+}
+
+._icon-phone:before {
+  content: "\e905";
+}
+
+._icon-search:before {
+  content: "\e906";
+}
+
+._icon-send:before {
+  content: "\e907";
+}
+
+._icon-share:before {
+  content: "\e908";
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -43,6 +115,10 @@ html, body {
 a, a:visited {
   text-decoration: none;
   color: inherit;
+}
+
+li {
+  list-style: none;
 }
 
 .wrapper {
@@ -140,7 +216,8 @@ a, a:visited {
 }
 
 .footer {
-  background-color: lightslategrey;
+  padding: 20px 0;
+  background-color: #d4d1d4;
 }
 
 .footer__body {
@@ -148,5 +225,30 @@ a, a:visited {
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
+}
+
+.footer__list-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__contacts-title {
+  text-align: left;
+  padding: 15px;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.footer__contacts-item {
+  margin-bottom: 5px;
+  font-size: 23px;
 }
 /*# sourceMappingURL=style.css.map */
